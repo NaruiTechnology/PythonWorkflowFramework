@@ -1,0 +1,62 @@
+{
+    "Processing":
+    {
+        "States":
+        [
+            {
+                "download_mcu":null,
+                "create_request":null,
+                "update_hsd_submit":null,
+                "send_notification":
+                {
+                    "stateData":
+                    {
+                        "parameters":
+                        [
+                            {
+                                "Server":"10.7.209.21",
+                                "Port":25,
+                                "Subject":"Microcode release automation",
+                                "From":"henry.li@intel.com",
+                                "To":
+                                [
+                                    "henry.li@intel.com"
+                                ],
+                                "BodyFormat":"The following Microcode [{}] has/have been release to [{}] on [{}].",
+                                "Password":""
+                            }
+                        ],
+                        "path":"",
+                        "command":"",
+                        "script":null,
+                        "repoUrl":null
+                    },
+                    "skip":false,
+                    "status":"Idle",
+                    "error":null,
+                    "waitkeystroke":false
+                }
+            }
+        ],
+        "key":"Processing",
+        "skip":false
+    },
+    "Schedule":
+    {
+        "AlertReportGracePeriodInMin":2,
+        "Frequency":"Hourly",
+        "Every":4,
+        "LastRun":"2020-03-29 18:14:35",
+        "AllowToSendAlert":true
+    },
+    "QueryId":0,
+    "GitKeeperScore":0,
+    "HsdArticle":null,
+    "McuDropBox":null,
+    "WorkSpace":null,
+    "timeout":0,
+    "LogName":"MiddlewareServiceMonitor",
+    "DryRun":false,
+    "OneTimeOnly":false,
+    "TransStatus":"Idle"
+}

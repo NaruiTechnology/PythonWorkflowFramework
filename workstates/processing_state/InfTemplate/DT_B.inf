@@ -1,0 +1,49 @@
+# INTEL CONFIDENTIAL
+# 
+# copyright 2018-2019 Intel Corporation.
+# 
+# This software and the related documents are Intel copyrighted materials, and your use of them is governed by the express license under which they were provided to you (License). Unless the License provides otherwise, you may not use, modify, copy, publish, distribute, disclose or transmit this software or the related documents without Intel's prior written permission.
+# 
+# This software and the related documents are provided as is, with no express or implied warranties, other than those that are expressly stated in the License.
+#
+#
+
+##
+# Microcode update file list
+# Desktop segment, Beta quality
+###
+
+[Defines]
+  INF_VERSION    = 0x00010016
+  BASE_NAME      = DT_B_198      ## 1. Set the PDB file name, and default build folder name.
+  FILE_GUID      = %GUID_STRING%
+  VERSION_STRING = 1.0
+  MODULE_TYPE    = USER_DEFINED
+
+[UserExtensions.MicrocodeConverter."License"]
+  ../LICENSE_PRE_PROD.md
+
+[UserExtensions.UpdateRepository."ReadMe"]
+  ../InternalOnly/NoticeFiles/pre_production/readme.md | repository/desktop/beta/readme.md
+
+
+[Sources]
+  ## 2. Update the inc file list for the release. 
+
+
+[UserExtensions.MicrocodeConverter."OptionalArguments"]
+  ## 3. Set the PDB output folder name. Overrides any default BASE_NAME folder name.
+  # --directory Build/DT_B        
+
+[UserExtensions.MicrocodeConverter."OsBlacklist"]
+  ## 4. If applicable, restrict additional specific microcode from being formatted for OS use.
+  ## OS Incompatible Patches list can be expanded by adding Platform ID and CPUID of additional CPU Microcode. 
+  ## Platform ID is a bit-mask.  "FF" will cover any microcode with any Platform ID bit set.   
+  ## Example Syntax: 
+  #  MFF_30673   
+  #  MFF_30678   
+  #  MFF_30679
+
+
+
+

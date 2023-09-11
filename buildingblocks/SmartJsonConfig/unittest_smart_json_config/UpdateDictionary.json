@@ -1,0 +1,18 @@
+{
+    "UpdateNodes":[
+        {
+            "Key": "DisableTPH",
+            "Properties": {
+                "Type": "Boolean",
+                "Options": [false, true],
+               "Default": true,
+               "CurrentValue": true
+            },
+            "RawDataMap":{
+            "Offset":"0x08",
+            "Size":"0x04",
+            "Value":"0x02"
+            }
+        }
+    ]
+}
